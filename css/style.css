@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1560px 950px;
+}
+
+
+
+.ul1 {
+    padding: 30px 200px;
+    display: flex;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: blanchedalmond;
+    border: solid;
+    border-width: 3px;
+    border-color: ivory;
+}
+
+li a {
+    color: red;
+    margin: 50px;
+    padding: 20px;
+}
+
+.profesionales {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.cards {
+    padding: 60px;
+    display: flex;
+    gap: 60px;
+}
+
+
+
+.card {
+    background-color: rgb(15, 60, 226);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card__titulo {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+
+.card__imagen {
+    width: 30%;
+    height: 180px;
+}
+
+.card__descripcion {
+    text-align: center;
+    color: white;
+}
+
+.card1 {
+    flex: 1;
+}
+
+.card2 {
+    flex: 1;
+}
+
+.card3 {
+    flex: 1;
+}
+
+.boton{
+    text-align: center;
+}
+
+.boton__turno {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.consultorios {
+    color: blue;
+    padding: 35px 0px;
+}
+
+.titulo__consultorios {
+    text-align: center;
+    font-size: 35px;
+}
+
+.img__consultorio {
+    flex-direction: row;
+    padding: 10px 0px;
+    width: 500px;
+    height: 300px;
+}
+
+.lugar {
+    background-image: url("../img/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.ubicacion {
+    width: 1100px;
+}
+
+.lugar__div2 {
+    padding-left: 20px;
+}
+
+.reloj {
+    width: 100px;
+}
+
+.parrafo {
+    flex-direction: column
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.footer {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.redesSociales {
+    width: 150px;
+    height: 100px;
+}
+
+.covid__19{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+}
+
+.covid__titulo{
+    padding: 20px 0px;
+    text-align: center;
+    color: white;
+}
+
+.video{
+    width: 1518px;
+    height: 500px;
+}
+
+.covid__parrafo{
+    padding: 25px;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+}
+
+.coberturas{
+    text-align: center ;
+    display: flex;
+    flex-direction: column;
+}
+
+.coberturas__titulo{
+    font-size: 40px;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.coberturas__parrafo{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+.contactenos{
+    text-align: center;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+}
+
+.contactenos__titulo{
+    font-size: 50px;
+    padding: 30px;
+}
+
+.contactenos__parrafo{
+    font-size: 30px;
+    padding: 25px 30px;
+}
+
+.footer2{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.turnos{
+    text-align: center;
+    padding: 10px;
+    color:crimson;
+}
+
+.turnos__titulo{
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
+
+.turnos__parrafo{
+    font-size: 25px;
+    padding: 15px;
+}
