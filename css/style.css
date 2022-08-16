@@ -6,33 +6,44 @@
     box-sizing: border-box;
 }
 
-
-body {
+body{
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
-    background-size: 1560px 950px;
+    background-size: cover ;
 }
 
+.imagenBackground {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.navbar{
+    padding: 20px ;
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    
+}
 
 
 .ul1 {
-    padding: 30px 200px;
-    display: flex;
+    padding: 30px ;
 }
 
-li {
+.li__navbar {
     display: inline-block;
     list-style-type: none;
-    background-color: blanchedalmond;
+    background-color: salmon;
     border: solid;
-    border-width: 3px;
-    border-color: ivory;
+    border-color: white;
 }
 
-li a {
-    color: red;
-    margin: 50px;
+.li__navbar a {
+    color: blue;
+    margin: 30px;
     padding: 20px;
+    text-decoration:none
 }
 
 .profesionales {
@@ -41,7 +52,7 @@ li a {
     text-align: center;
 }
 
-.cards {
+.medico {
     padding: 60px;
     display: flex;
     gap: 60px;
@@ -49,40 +60,61 @@ li a {
 
 
 
-.card {
+.medicos {
     background-color: rgb(15, 60, 226);
     border-radius: 20px;
     text-align: center;
 }
 
-.card__titulo {
+.medicos__titulo {
     width: 100%;
     text-align: center;
     color: white;
 }
 
 
-.card__imagen {
+.medicos__imagen {
     width: 30%;
     height: 180px;
 }
 
-.card__descripcion {
+.medicos__descripcion {
     text-align: center;
     color: white;
 }
 
-.card1 {
+.medicos1 {
     flex: 1;
 }
 
-.card2 {
+.medicos2 {
     flex: 1;
 }
 
-.card3 {
+.medicos3 {
     flex: 1;
 }
+
+.tablaTelefono{
+padding: 20px;
+text-align: left;
+display: none;
+width: 100%;
+}
+
+.tabla__titulos {
+    color: white;
+    border: solid ;
+    border-color: black;
+}
+.tabla__medicos{
+    color: white;
+    border: solid;
+    border-color: black;
+    width: 200px;
+}
+
+
 
 .boton{
     text-align: center;
@@ -96,19 +128,22 @@ li a {
 .consultorios {
     color: blue;
     padding: 35px 0px;
+    width: 100%;
+    height: 500px;
 }
 
 .titulo__consultorios {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 35px;
 }
 
-.img__consultorio {
+.img__consultorio1, .img__consultorio2, .img__consultorio3 {
     flex-direction: row;
-    padding: 10px 0px;
-    width: 500px;
+    width: 33%;
     height: 300px;
 }
+
 
 .lugar {
     background-image: url("../img/background2.jpg");
@@ -137,7 +172,7 @@ h3 {
     font-size: 25px;
 }
 
-.footer {
+.pie {
     background-color: aqua;
     display: flex;
     justify-content: center;
@@ -209,15 +244,6 @@ h3 {
     padding: 25px 30px;
 }
 
-.footer2{
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 
 .turnos{
     text-align: center;
@@ -234,4 +260,105 @@ h3 {
 .turnos__parrafo{
     font-size: 25px;
     padding: 15px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1600px){
+    .ubicacion {
+        width: 900PX;
+    }
+
+    .consultorios{
+        height: 800px;
+    }
+    
+    .img__consultorio1, .img__consultorio2{
+        width: 49%;
+    }
+    .img__consultorio3{
+        width: 100%  ;
+    }
+
+    .video{
+       width: 1024px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1024px){
+    .ubicacion {
+        width: 650px;
+    }
+
+    .video{
+        width: 768px;
+    }
+
+   
+
+}
+
+
+@media screen and (max-width: 768px){
+    .li__navbar {
+        width: 100%; 
+        padding: 16px;    
+}
+
+.medicos__imagen{
+    width: 75%;    
+}
+
+.ubicacion {
+    width: 100%;
+}
+
+.redesSociales {
+    width: 75%;
+    height: 100px;
+}
+
+.video{
+    width: 480px;
+}
+
+}
+
+@media screen and (max-width: 480px){
+   
+    .medicos{
+        display: none;
+    }
+    .tablaTelefono{
+        display: contents;
+    }
+
+   
+    .ubicacion {
+        width: 100%;
+    }
+    
+    .reloj{
+        display: none;
+    }
+
+    .pie__h2{
+        display: none;
+    }
+
+    .redesSociales {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .video{
+        width: 360px;
+    }
+
 }
