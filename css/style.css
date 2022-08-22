@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 
 * {
     margin: 0;
@@ -6,48 +8,51 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("../img/background.jpg");
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../img/background2.jpg");
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
 }
 
 .imagenBackground {
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
 }
 
-.navbar{
-    padding: 20px ;
+.navbar {
+    font-family: 'DynaPuff', cursive;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    width: 100%;    
-    
+    width: 100%;
+
 }
 
 
 .ul1 {
-    padding: 30px ;
+    padding: 30px;
 }
 
 .li__navbar {
     display: inline-block;
     list-style-type: none;
-    background-color: salmon;
+    background-color: rgb(250, 128, 114);
     border: solid;
-    border-color: white;
+    border-color: rgb(255, 255, 255);
 }
 
 .li__navbar a {
-    color: blue;
+    color: rgb(0, 0, 255);
     margin: 30px;
     padding: 20px;
-    text-decoration:none
+    text-decoration: none
 }
 
 .profesionales {
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
     font-size: 35px;
     text-align: center;
 }
@@ -80,7 +85,7 @@ body{
 
 .medicos__descripcion {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .medicos1 {
@@ -95,20 +100,29 @@ body{
     flex: 1;
 }
 
-.tablaTelefono{
-padding: 20px;
-text-align: left;
-display: none;
-width: 100%;
+.medico {
+    -webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+
+
+.tablaTelefono {
+    padding: 20px;
+    text-align: left;
+    display: none;
+    width: 100%;
 }
 
 .tabla__titulos {
-    color: white;
-    border: solid ;
+    color: rgb(255, 255, 255);
+    border: solid;
     border-color: black;
 }
-.tabla__medicos{
-    color: white;
+
+.tabla__medicos {
+    color: rgb(255, 255, 255);
     border: solid;
     border-color: black;
     width: 200px;
@@ -116,17 +130,36 @@ width: 100%;
 
 
 
-.boton{
+.boton {
     text-align: center;
+    padding: 20px;
 }
+
 
 .boton__turno {
     padding: 15px;
     font-size: 20px;
+    transition: all 1s 100ms;
 }
 
+.boton__turno:hover {
+    background-color: rgb(250, 128, 114);
+    transform: scale(1.2);
+}
+
+
+.boton__enlace {
+    text-decoration: none;
+    transition: all 1s
+}
+
+.boton__enlace:hover {
+    color: rgb(2, 2, 2);
+}
+
+
 .consultorios {
-    color: blue;
+    color: rgb(0, 0, 255);
     padding: 35px 0px;
     width: 100%;
     height: 500px;
@@ -138,7 +171,9 @@ width: 100%;
     font-size: 35px;
 }
 
-.img__consultorio1, .img__consultorio2, .img__consultorio3 {
+.img__consultorio1,
+.img__consultorio2,
+.img__consultorio3 {
     flex-direction: row;
     width: 33%;
     height: 300px;
@@ -160,10 +195,6 @@ width: 100%;
     padding-left: 20px;
 }
 
-.reloj {
-    width: 100px;
-}
-
 .parrafo {
     flex-direction: column
 }
@@ -173,91 +204,111 @@ h3 {
 }
 
 .pie {
-    background-color: aqua;
+    background-color: rgb(0, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.redesSociales {
-    width: 150px;
-    height: 100px;
+.pie__link {
+    padding-left: 20px;
+    text-decoration: none;
+    color: rgb(10, 8, 155);
 }
 
-.covid__19{
+.covid__19 {
     text-align: center;
     font-size: 40px;
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
-.covid__titulo{
+.covid__titulo {
     padding: 20px 0px;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-.video{
-    width: 1518px;
-    height: 500px;
-}
 
-.covid__parrafo{
+.covid__parrafo {
     padding: 25px;
     font-size: 17px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
-.coberturas{
-    text-align: center ;
+.covid__link {
+    text-decoration: none;
+    color: rgb(10, 8, 155);
+}
+
+.video {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coberturas {
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.coberturas__titulo{
+.coberturas__titulo {
     font-size: 40px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     padding: 20px;
 }
 
-.coberturas__parrafo{
+.coberturas__parrafo {
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: rgb(33, 0, 182);
     padding-top: 20px;
 }
 
-.contactenos{
+.cobertura__imagen {
+    padding: 20px 30px;
+}
+
+
+
+.contactenos {
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     height: 100%;
     width: 100%;
 }
 
-.contactenos__titulo{
+.contactenos__titulo {
     font-size: 50px;
     padding: 30px;
 }
 
-.contactenos__parrafo{
+.contactenos__parrafo {
+    width: 100%;
     font-size: 30px;
-    padding: 25px 30px;
+    padding: 20px 0px;
+}
+
+.contactenos__link {
+    text-decoration: none;
+    color: rgb(18, 10, 134);
 }
 
 
-.turnos{
+.turnos {
     text-align: center;
     padding: 10px;
-    color:crimson;
+    color: rgb(0, 0, 0);
 }
 
-.turnos__titulo{
+.turnos__titulo {
     font-size: 40px;
     padding-bottom: 20px;
-    color: aliceblue;
+    color: rgb(168, 19, 19);
 }
 
-.turnos__parrafo{
+.turnos__parrafo {
     font-size: 25px;
     padding: 15px;
 }
@@ -267,88 +318,93 @@ h3 {
 
 
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) {
     .ubicacion {
         width: 900PX;
     }
 
-    .consultorios{
+    .consultorios {
         height: 800px;
     }
-    
-    .img__consultorio1, .img__consultorio2{
+
+    .img__consultorio1,
+    .img__consultorio2 {
         width: 49%;
     }
-    .img__consultorio3{
-        width: 100%  ;
+
+    .img__consultorio3 {
+        width: 100%;
     }
 
-    .video{
-       width: 1024px;
+    .video {
+        align-items: center;
     }
 
-    
+
 }
 
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .ubicacion {
         width: 650px;
     }
 
-    .video{
-        width: 768px;
+    .video {
+        width: 100vw;
     }
 
-   
+
 
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .li__navbar {
-        width: 100%; 
-        padding: 16px;    
-}
-
-.medicos__imagen{
-    width: 75%;    
-}
-
-.ubicacion {
-    width: 100%;
-}
-
-.redesSociales {
-    width: 75%;
-    height: 100px;
-}
-
-.video{
-    width: 480px;
-}
-
-}
-
-@media screen and (max-width: 480px){
-   
-    .medicos{
-        display: none;
-    }
-    .tablaTelefono{
-        display: contents;
+        width: 100%;
+        padding: 16px;
     }
 
-   
+    .medicos__imagen {
+        width: 75%;
+    }
+
     .ubicacion {
         width: 100%;
     }
-    
-    .reloj{
+
+    .redesSociales {
+        width: 75%;
+        height: 100px;
+    }
+
+    .contactenos__parrafo {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .medicos {
         display: none;
     }
 
-    .pie__h2{
+    .tablaTelefono {
+        display: contents;
+    }
+
+
+    .ubicacion {
+        width: 100%;
+    }
+
+
+    .lugar {
+        flex-direction: column;
+    }
+
+    .pie__h2 {
         display: none;
     }
 
@@ -356,9 +412,9 @@ h3 {
         width: 100%;
         height: 100px;
     }
-    
-    .video{
-        width: 360px;
+
+    .video {
+        padding: 0px;
     }
 
 }
