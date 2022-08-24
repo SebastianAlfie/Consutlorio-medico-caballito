@@ -50,6 +50,10 @@ body {
     text-decoration: none
 }
 
+.nav2{
+    display: none;
+}
+
 .profesionales {
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 255, 255);
@@ -359,9 +363,12 @@ h3 {
 
 
 @media screen and (max-width: 768px) {
-    .li__navbar {
-        width: 100%;
-        padding: 16px;
+    .ul1{
+        display: none;
+    }
+
+    .nav2{
+        display: contents;
     }
 
     .medicos__imagen {
