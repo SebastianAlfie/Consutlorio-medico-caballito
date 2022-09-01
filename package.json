@@ -1,0 +1,24 @@
+{
+  "name": "consultoriomedicocaballito",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianAlfie/Consutlorio-medico-caballito.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianAlfie/Consutlorio-medico-caballito/issues"
+  },
+  "homepage": "https://github.com/SebastianAlfie/Consutlorio-medico-caballito#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
