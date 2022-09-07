@@ -1,0 +1,23 @@
+.coberturas {
+    text-align: center;
+    display: $db;
+    flex-direction: column;
+    .coberturas__titulo {
+        font-size: $font-size2;
+        color: $color1;
+        padding: $padding-1;
+    }
+    .coberturas__parrafo {
+        font-size: $font-size1;
+        color: $color2;
+        padding-top: $padding-1;
+    }
+    .cobertura__imagen {
+        padding: $padding-1 $padding-3;
+        width: 50%;
+        max-height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
+

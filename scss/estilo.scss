@@ -1,86 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-image: url("../img/background6.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.navbar {
-    font-family: 'DynaPuff', cursive;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    .ul1 {
-        padding: 30px;
-        .li__navbar {
-            display: inline-block;
-            list-style-type: none;
-            background-color: rgb(250, 128, 114);
-            border: solid;
-            border-color: rgb(255, 255, 255);
-
-            a{ 
-                color: rgb(0, 0, 255);
-                margin: 30px;
-                padding: 20px;
-                text-decoration: none
-            }
-        }
-    }
-    .nav2{
-        display: none;
-    }
-}
-
-
-.contactenos {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    height: 100%;
-    width: 100%;
-    .contactenos__titulo {
-        font-size: 50px;
-        padding: 30px;
-        color: rgb(255, 0, 0);
-    }
-    .contactenos__parrafo {
-        width: 100%;
-        font-size: 30px;
-        padding: 20px 0px;
-
-        .contactenos__link {
-            text-decoration: none;
-            color: rgb(255, 0, 0);
-        }
-        
-    }
-
-}
-
-
-.pie {
-    background-color: rgb(0, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    .pie__link {
-        padding-left: 20px;
-        text-decoration: none;
-        color: rgb(10, 8, 155);
-    }
-}
+@import "fonts";
+@import "reset";
+@import "size";
+@import "misc";
+@import "navbar";
+@import "index";
+@import "turnos";
+@import "coberturas";
+@import "contactenos";
+@import "covid19";
+@import "pie";
+@import "queries";

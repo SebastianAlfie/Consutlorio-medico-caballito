@@ -1,0 +1,26 @@
+.turnos {
+    text-align: center;
+    padding: $padding-4;
+    color: $color2;
+    
+    .turnos__titulo {
+        font-size: $font-size2;
+        padding-bottom: $padding-1;
+        color: $color1;
+    }
+    .boton__turno {
+        padding: $padding-5;
+        font-size: $font-size3;
+        transition: all 1s 100ms;
+        &:hover {
+            background-color: $color4;
+            transform: scale(1.2);
+        }
+        }
+    
+    .turnos__parrafo {
+        font-size: $font-size1;
+        padding: $padding-5;
+    }    
+}
+

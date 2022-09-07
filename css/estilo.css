@@ -7,13 +7,13 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-image: url("../img/background6.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
 .navbar {
-  font-family: 'DynaPuff', cursive;
+  font-family: "DynaPuff", cursive;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -25,34 +25,214 @@ body {
       list-style-type: none;
       background-color: salmon;
       border: solid;
-      border-color: white; }
+      border-color: #f8f1f1; }
       .navbar .ul1 .li__navbar a {
-        color: blue;
+        color: #0404f5;
         margin: 30px;
         padding: 20px;
         text-decoration: none; }
   .navbar .nav2 {
     display: none; }
 
+.profesionales {
+  color: #f8f1f1;
+  font-size: 35px;
+  text-align: center; }
+
+.medico {
+  padding: 60px;
+  display: flex;
+  gap: 60px;
+  -webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+  .medico .medicos {
+    background-color: #0f3ce2;
+    border-radius: 20px;
+    text-align: center; }
+    .medico .medicos .medicos__titulo {
+      width: 100%;
+      text-align: center;
+      color: #f8f1f1; }
+    .medico .medicos .medicos__imagen {
+      width: 180px;
+      height: 30%; }
+    .medico .medicos .medicos__descripcion {
+      text-align: center;
+      color: #f8f1f1; }
+  .medico .medicos1 {
+    flex: 1; }
+  .medico .medicos2 {
+    flex: 1; }
+  .medico .medicos3 {
+    flex: 1; }
+  .medico .tablaTelefono {
+    padding: 30px 0px;
+    text-align: left;
+    display: none;
+    width: 100%; }
+    .medico .tablaTelefono .tabla__titulos {
+      color: #020202;
+      border: solid;
+      border-color: #020202; }
+    .medico .tablaTelefono .tabla__class .tabla__medicos {
+      color: #f8f1f1;
+      border: solid;
+      border-color: #020202; }
+
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; } }
+
+@keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; } }
+
+.consultorios {
+  color: #f8f1f1;
+  padding: 35px 0px;
+  width: 500px;
+  height: 100%; }
+  .consultorios .boton {
+    text-align: center;
+    padding: 20px; }
+    .consultorios .boton .boton__turno {
+      padding: 15px;
+      font-size: 35px;
+      transition: all 1s 100ms; }
+      .consultorios .boton .boton__turno:hover {
+        background-color: salmon;
+        transform: scale(1.2); }
+      .consultorios .boton .boton__turno .boton__enlace {
+        text-decoration: none;
+        transition: all 1s; }
+        .consultorios .boton .boton__turno .boton__enlace:hover {
+          color: #020202; }
+  .consultorios .titulo__consultorios {
+    display: flex;
+    justify-content: center;
+    font-size: 35px; }
+  .consultorios .img__consultorio1,
+  .consultorios .img__consultorio2,
+  .consultorios .img__consultorio3 {
+    flex-direction: row;
+    width: 300px;
+    height: 33%; }
+
+.lugar {
+  background-image: url("../img/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex; }
+  .lugar .ubicacion {
+    width: 1100px; }
+  .lugar .lugar__div2 {
+    padding-left: 20px; }
+    .lugar .lugar__div2 h3 {
+      font-size: 25px; }
+    .lugar .lugar__div2 .parrafo {
+      flex-direction: column; }
+
+.turnos {
+  text-align: center;
+  padding: 10px;
+  color: #f8f1f1; }
+  .turnos .turnos__titulo {
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #f70606; }
+  .turnos .boton__turno {
+    padding: 15px;
+    font-size: 20px;
+    transition: all 1s 100ms; }
+    .turnos .boton__turno:hover {
+      background-color: salmon;
+      transform: scale(1.2); }
+  .turnos .turnos__parrafo {
+    font-size: 25px;
+    padding: 15px; }
+
+.coberturas {
+  text-align: center;
+  display: block;
+  flex-direction: column; }
+  .coberturas .coberturas__titulo {
+    font-size: 40px;
+    color: #f70606;
+    padding: 20px; }
+  .coberturas .coberturas__parrafo {
+    font-size: 25px;
+    color: #f8f1f1;
+    padding-top: 20px; }
+  .coberturas .cobertura__imagen {
+    padding: 20px 30px;
+    width: 50%;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+
 .contactenos {
   text-align: center;
-  color: white;
-  height: 100%;
-  width: 100%; }
+  color: #f8f1f1;
+  width: 100%;
+  height: 100%; }
   .contactenos .contactenos__titulo {
     font-size: 50px;
     padding: 30px;
-    color: red; }
+    color: #f70606; }
   .contactenos .contactenos__parrafo {
     width: 100%;
     font-size: 30px;
     padding: 20px 0px; }
     .contactenos .contactenos__parrafo .contactenos__link {
       text-decoration: none;
-      color: red; }
+      color: #f70606; }
+
+.covid .covid__19 {
+  text-align: center;
+  font-size: 40px;
+  color: #f70606; }
+
+.covid .covid__titulo {
+  padding: 20px 0px;
+  text-align: center;
+  color: #f8f1f1; }
+
+.covid .video {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
+
+.covid .covid__parrafo {
+  padding: 25px;
+  font-size: 17px;
+  color: #f8f1f1;
+  text-align: center; }
+  .covid .covid__parrafo .covid__link {
+    text-decoration: none;
+    color: #f70606; }
 
 .pie {
-  background-color: cyan;
+  background-color: #04f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,3 +241,58 @@ body {
     padding-left: 20px;
     text-decoration: none;
     color: #0a089b; }
+
+@media only screen and (max-width: 1600px) {
+  .lugar .ubicacion {
+    width: 900PX; }
+  .consultorios {
+    height: 800px; }
+    .consultorios .img__consultorio1,
+    .consultorios .img__consultorio2 {
+      width: 49%; }
+    .consultorios .img__consultorio3 {
+      width: 100%; } }
+
+@media screen and (max-width: 1024px) {
+  .lugar .ubicacion {
+    width: 650px; }
+  .covid .video {
+    width: 100vw; } }
+
+@media screen and (max-width: 1004px) {
+  .navbar .ul1 {
+    padding: 30px 0px; } }
+
+@media screen and (max-width: 968px) {
+  .navbar .ul1 {
+    display: none; }
+  .navbar .nav2 {
+    display: contents; } }
+
+@media screen and (max-width: 768px) {
+  .medicos .medicos__imagen {
+    width: 75%; }
+  .lugar .ubicacion {
+    width: 100%; }
+  .pie .redesSociales {
+    width: 100px;
+    height: 75%; }
+  .contactenos__parrafo {
+    font-size: 20px; } }
+
+@media screen and (max-width: 480px) {
+  .medico .medicos {
+    display: none; }
+  .medico .tablaTelefono {
+    display: contents; }
+  .lugar .ubicacion {
+    width: 100%; }
+  .lugar {
+    flex-direction: column; }
+  .pie .pie__h2 {
+    display: none; }
+  .pie .redesSociales {
+    width: 100px;
+    height: 100%; }
+  .covid .video {
+    padding: 0px; } }

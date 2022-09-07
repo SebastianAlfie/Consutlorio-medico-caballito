@@ -1,0 +1,31 @@
+.covid {
+    .covid__19 {
+        text-align: center;
+        font-size: $font-size2;
+        color: $color1;
+    }
+
+    .covid__titulo {
+        padding: $padding-1 $padding-6;
+        text-align: center;
+        color: $color2;
+    }
+
+    .video {
+        display: $df;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .covid__parrafo {
+        padding: $padding-2;
+        font-size: $font-size5;
+        color: $color2;
+        text-align: center;
+
+        .covid__link {
+            text-decoration: none;
+            color: $color1;
+        }
+    }
+}

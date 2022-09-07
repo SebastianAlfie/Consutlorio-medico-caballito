@@ -1,0 +1,113 @@
+        @media only screen and (max-width: 1600px) {
+            .lugar .ubicacion {
+                width: 900PX;
+            }
+
+            .consultorios {
+                height: 800px;
+
+                .img__consultorio1,
+                .img__consultorio2 {
+                    width: 49%;
+                }
+
+                .img__consultorio3 {
+                    width: 100%;
+                }
+            }
+        }
+
+
+
+        @media screen and (max-width: 1024px) {
+            .lugar .ubicacion {
+                width: 650px;
+            }
+
+           .covid .video {
+                width: 100vw;
+            }
+
+
+
+        }
+
+
+
+
+
+        @media screen and (max-width: 1004px) {
+            .navbar .ul1 {
+                padding: $padding-3 $padding-6;
+            }
+        }
+
+
+        @media screen and (max-width: 968px) {
+            .navbar {
+                .ul1 {
+                    display: $dn;
+                }
+
+                .nav2 {
+                    display: $dc;
+                }
+            }
+        }
+
+
+        @media screen and (max-width: 768px) {
+
+            .medicos .medicos__imagen {
+                width: 75%;
+            }
+
+            .lugar .ubicacion {
+                width: 100%;
+            }
+
+            .pie .redesSociales {
+                @include size(75%, 100px)
+            }
+
+            .contactenos__parrafo {
+                font-size: $font-size3;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            .medico {
+                .medicos {
+                    display: $dn;
+                }
+
+                .tablaTelefono {
+                    display: $dc;
+                }
+            }
+
+
+            .lugar .ubicacion {
+                width: 100%;
+            }
+
+
+            .lugar {
+                flex-direction: column;
+            }
+
+            .pie {.pie__h2 {
+                display: $dn;
+            }
+
+            .redesSociales {
+                @include size(100%, 100px)
+            }
+        }
+
+            .covid .video {
+                padding: $padding-6;
+            }
+        }

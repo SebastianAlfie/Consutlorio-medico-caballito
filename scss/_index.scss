@@ -1,0 +1,176 @@
+.profesionales {
+    color: $color2;
+    font-size: $font-size4;
+    text-align: center;
+}
+
+.medico {
+    padding: $padding-7;
+    display: $df;
+    gap: 60px;
+
+    .medicos {
+        background-color: $bg1;
+        border-radius: 20px;
+        text-align: center;
+
+        .medicos__titulo {
+            width: 100%;
+            text-align: center;
+            color: $color2;
+        }
+
+        .medicos__imagen {
+          @include size(30%, 180px)
+        }
+
+        .medicos__descripcion {
+            text-align: center;
+            color: $color2;
+        }
+
+    }
+
+    .medicos1 {
+        flex: 1;
+    }
+
+    .medicos2 {
+        flex: 1;
+    }
+
+    .medicos3 {
+        flex: 1;
+    }
+
+    -webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    .tablaTelefono {
+        padding: $padding-3 $padding-6;
+        text-align: left;
+        display: $dn;
+        width: 100%;
+
+        .tabla__titulos {
+            color:$color3;
+            border: solid;
+            border-color: $color3;       
+            }
+        .tabla__class{
+            .tabla__medicos {
+                color: $color2;
+                border: solid;
+                border-color: $color3;
+                }
+        }    
+    }
+}
+
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1
+    }
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1
+    }
+}
+
+
+.consultorios {
+    color: $color2;
+    padding: $padding-8 $padding-6;
+    @include size(100%, 500px);
+
+    .boton {
+        text-align: center;
+        padding: $padding-1;
+
+        .boton__turno {
+            padding: $padding-5;
+            font-size: $font-size4;
+            transition: all 1s 100ms;
+
+            &:hover {
+                background-color: $color4;
+                transform: scale(1.2);
+            }
+
+            .boton__enlace {
+                text-decoration: none;
+                transition: all 1s;
+
+                &:hover {
+                    color: $color3;
+                }
+            }
+        }
+    }
+
+    .titulo__consultorios {
+        display: $df;
+        justify-content: center;
+        font-size: $font-size4;
+    }
+
+    .img__consultorio1,
+    .img__consultorio2,
+    .img__consultorio3 {
+        flex-direction: row;
+        @include size(33%, 300px)
+    }
+}
+
+
+
+.lugar {
+    background-image: url("../img/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: $df;
+
+    .ubicacion {
+        width: 1100px;
+    }
+
+    .lugar__div2 {
+        padding-left: $padding-1;
+
+        h3 {
+            font-size: $font-size1;
+        }
+
+        .parrafo {
+            flex-direction: column
+        }
+
+    }
+}

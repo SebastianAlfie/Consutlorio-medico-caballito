@@ -1,0 +1,12 @@
+.pie {
+    background-color: $bg2;
+    display: $df;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .pie__link {
+        padding-left: $padding-1;
+        text-decoration: none;
+        color: $color6;
+    }
+}

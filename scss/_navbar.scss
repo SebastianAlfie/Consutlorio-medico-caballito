@@ -1,0 +1,28 @@
+.navbar {
+    font-family: $font-family3;
+    padding: $padding-1;
+    display: $df;
+    justify-content: center;
+    width: 100%;
+
+    .ul1 {
+        padding: $padding-3;
+        .li__navbar {
+            display: $dib;
+            list-style-type: none;
+            background-color: $bg3;
+            border: solid;
+            border-color: $color2;
+
+            a{ 
+                color: $color5;
+                margin: $margin-1;
+                padding: $padding-1;
+                text-decoration: none
+            }
+        }
+    }
+    .nav2{
+        display: $dn;
+    }
+}
