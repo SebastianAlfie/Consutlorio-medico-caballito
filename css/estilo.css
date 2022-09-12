@@ -295,4 +295,5 @@ body {
     width: 100px;
     height: 100%; }
   .covid .video {
-    padding: 0px; } }
+    padding: 0px;
+    width: 90vw; } }
