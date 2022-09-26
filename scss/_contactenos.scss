@@ -1,22 +1,38 @@
 .contactenos {
-    text-align: center;
-    color: $color2;
-    @include size(100%, 100%);
     .contactenos__titulo {
+        text-align: center;
         font-size: $font-size6;
-        padding: $padding-3;
         color: $color1;
     }
-    .contactenos__parrafo {
-        width: 100%;
-        font-size: $font-size7;
-        padding: $padding-1 $padding-6;
+}
 
-        .contactenos__link {
-            text-decoration: none;
-            color: $color1;
-        }
-        
+.contacto {
+    text-align: center;
+
+    .contacto__email {
+        font-size: $font-size6;
+        padding: $padding-3;
+        color: $color2;
     }
+}
 
+.contactos {
+    text-align: center;
+
+    .contacto__descripcion {
+        font-size: $font-size6;
+        padding: $padding-3;
+        color: $color2;
+    }
+}
+
+.enviar {
+    text-align: center;
+    padding: $padding-5;
+
+    .boton__contacto {
+        text-align: center;
+        padding: $padding-5;
+        color: $color5;
+    }
 }

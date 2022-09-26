@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactenos</title>
     <meta name="description" content="Redes sociales y teléfonos de contacto.">
-    <meta name="keywords" content="Consultorio, Consultorio médico, Pediatria, Kinesiología, Covid, Covid 19, Turnos online">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta name="keywords"
+        content="Consultorio, Consultorio médico, Pediatria, Kinesiología, Covid, Covid 19, Turnos online">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
@@ -56,19 +58,20 @@
         </nav>
     </header>
     <main>
-        <section class="contactenos">
+        <div class="contactenos">
             <h1 class="contactenos__titulo">Contactenos</h1>
-            <p class="contactenos__parrafo">Cualquier consulta, contactenos al siguiente mail:</p>
-            <p class="contactenos__parrafo"> asdfasdf@intramed.net</p>
-            <p class="contactenos__parrafo"> Número </p>
-            <p class="contactenos__parrafo"> 45612345</p>
-            <p class="contactenos__parrafo"> Por nuestras redes sociales</p>
-            <p class="contactenos__parrafo">
-                <a class="contactenos__link" target="_blank" href="https://twitter.com/">Twitter</a>
-                <a class="contactenos__link" target="_blank" href="https://es-la.facebook.com/">Facebook</a> 
-                <a class="contactenos__link" target="_blank" href="https://www.instagram.com/">Instagram</a>
-            </p> 
-        </section>
+        </div>
+        <div class="contacto">
+            <label for="exampleFormControlInput1" class="contacto__email">Email </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="contactos">
+            <label for="exampleFormControlTextarea1" class="contacto__descripcion">Motivo del contacto</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="enviar">
+            <button type="submit" class="boton__contacto"> Enviar </button>
+        </div>
     </main>
     <footer class="pie">
         <h2 class="pie__h2">Consultorio médico Caballito</h2>
@@ -81,8 +84,10 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/e4e179235b.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
