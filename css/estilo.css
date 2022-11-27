@@ -8,7 +8,6 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-image: url("../img/background6.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -35,7 +34,7 @@ body {
     display: none; }
 
 .profesionales {
-  color: #f8f1f1;
+  color: #020202;
   font-size: 35px;
   text-align: center; }
 
@@ -71,13 +70,13 @@ body {
     display: none;
     width: 100%; }
     .medico .tablaTelefono .tabla__titulos {
-      color: #020202;
+      color: #f70606;
       border: solid;
-      border-color: #020202; }
+      border-color: #f70606; }
     .medico .tablaTelefono .tabla__class .tabla__medicos {
-      color: #f8f1f1;
+      color: #f70606;
       border: solid;
-      border-color: #020202; }
+      border-color: #f70606; }
 
 @-webkit-keyframes swing-in-top-fwd {
   0% {
@@ -108,7 +107,7 @@ body {
     opacity: 1; } }
 
 .consultorios {
-  color: #f8f1f1;
+  color: #020202;
   padding: 35px 0px;
   width: 100%;
   height: 500px; }
@@ -152,10 +151,11 @@ body {
     .lugar .lugar__div2 .parrafo {
       flex-direction: column; }
 
+/* Dark mode */
 .turnos {
   text-align: center;
   padding: 10px;
-  color: #f8f1f1; }
+  color: #020202; }
   .turnos .turnos__titulo {
     font-size: 40px;
     padding-bottom: 20px;
@@ -181,7 +181,7 @@ body {
     padding: 20px; }
   .coberturas .coberturas__parrafo {
     font-size: 25px;
-    color: #f8f1f1;
+    color: #020202;
     padding-top: 20px; }
   .coberturas .cobertura__imagen {
     padding: 20px 30px;
@@ -200,14 +200,14 @@ body {
   .contacto .contacto__email {
     font-size: 50px;
     padding: 30px;
-    color: #f8f1f1; }
+    color: #020202; }
 
 .contactos {
   text-align: center; }
   .contactos .contacto__descripcion {
     font-size: 50px;
     padding: 30px;
-    color: #f8f1f1; }
+    color: #020202; }
 
 .enviar {
   text-align: center;
@@ -225,7 +225,7 @@ body {
 .covid .covid__titulo {
   padding: 20px 0px;
   text-align: center;
-  color: #f8f1f1; }
+  color: #020202; }
 
 .covid .video {
   display: flex;
@@ -235,11 +235,47 @@ body {
 .covid .covid__parrafo {
   padding: 25px;
   font-size: 17px;
-  color: #f8f1f1;
+  color: #020202;
   text-align: center; }
   .covid .covid__parrafo .covid__link {
     text-decoration: none;
     color: #f70606; }
+
+#color-mode {
+  margin: 0px 100px;
+  padding: 20px;
+  border: solid; }
+
+.btn {
+  padding: 15px;
+  font-size: 17px; }
+  .btn:hover {
+    transform: scale(1.1); }
+
+body {
+  transition: background-color 0.3s, color 0.3s; }
+
+body.dark-mode {
+  background-color: #020202;
+  color: #f8f1f1; }
+  body.dark-mode .btn {
+    color: #f8f1f1; }
+  body.dark-mode .profesionales {
+    color: #f8f1f1; }
+  body.dark-mode .consultorios {
+    color: #f8f1f1; }
+  body.dark-mode .turnos {
+    color: #f8f1f1; }
+  body.dark-mode .coberturas__parrafo {
+    color: #f8f1f1; }
+  body.dark-mode .contacto__email {
+    color: #f8f1f1; }
+  body.dark-mode .contacto__descripcion {
+    color: #f8f1f1; }
+  body.dark-mode .covid__titulo {
+    color: #f8f1f1; }
+  body.dark-mode .covid__parrafo {
+    color: #f8f1f1; }
 
 .pie {
   background-color: #04f7f7;

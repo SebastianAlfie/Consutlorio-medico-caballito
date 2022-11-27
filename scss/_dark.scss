@@ -1,0 +1,60 @@
+#color-mode {
+    margin: 0px 100px;
+    padding: $padding-1;
+    border: solid;
+}
+
+.btn {
+    padding: $padding-5;
+    font-size: $font-size5;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.dark-mode {
+    background-color: $color3;
+    color: $color2;
+
+    .btn {
+        color: $color2;
+    }
+
+    .profesionales {
+        color: $color2;
+    }
+
+    .consultorios {
+        color: $color2;
+    }
+
+    .turnos {
+        color: $color2;
+    }
+
+    .coberturas__parrafo {
+        color: $color2;
+    }
+
+    .contacto__email {
+        color: $color2
+    }
+
+    .contacto__descripcion {
+        color: $color2
+    }
+
+    .covid__titulo {
+        color: $color2
+    }
+
+    .covid__parrafo {
+        color: $color2
+    }
+}

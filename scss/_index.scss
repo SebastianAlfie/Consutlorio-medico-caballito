@@ -1,5 +1,10 @@
+
+
+
+
+
 .profesionales {
-    color: $color2;
+    color: $color3;
     font-size: $font-size4;
     text-align: center;
 }
@@ -21,8 +26,8 @@
         }
 
         .medicos__imagen {
-          width: 75%;
-          height: 250px;
+            width: 75%;
+            height: 250px;
         }
 
         .medicos__descripcion {
@@ -54,17 +59,18 @@
         width: 100%;
 
         .tabla__titulos {
-            color:$color3;
+            color: $color1;
             border: solid;
-            border-color: $color3;       
-            }
-        .tabla__class{
+            border-color: $color1;
+        }
+
+        .tabla__class {
             .tabla__medicos {
-                color: $color2;
+                color: $color1;
                 border: solid;
-                border-color: $color3;
-                }
-        }    
+                border-color: $color1;
+            }
+        }
     }
 }
 
@@ -107,7 +113,7 @@
 
 
 .consultorios {
-    color: $color2;
+    color: $color3;
     padding: $padding-8 $padding-6;
     width: 100%;
     height: 500px;
@@ -177,3 +183,6 @@
 
     }
 }
+
+/* Dark mode */
+
